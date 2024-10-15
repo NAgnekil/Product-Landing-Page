@@ -12,6 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <title>Product Landing Page</title>
     <meta
       name="description"
@@ -19,6 +25,7 @@
     />
   </head>
   <body>
+    <div class="header-border"></div>
     <header id="header">
       <span><img src="eco-logo.jpg" alt="logo" id="header-img" /> EcoWave</span>
       <nav id="nav-bar">
@@ -28,33 +35,258 @@
       </nav>
     </header>
     <main>
-      <section class="hero">
+      <div class="hero">
         <div class="hero-content">
           <h1>Explore the Outdoors with EcoWave</h1>
           <p>Sustainable products for your next adventure</p>
           <button><a href="#products" class="btn-primary">Shop Now</a></button>
         </div>
-      </section>
-      <section id="products">
-        <h2>Our Bestsellers</h2>
-        <div class="product">
-          <h3>EcoPack Backpack</h3>
-          <p>899 SEK</p>
-          <a href="#" class="btn-secondary">Buy Now</a>
+      </div>
+      <section class="why-eco-wave" id="whyecowave">
+        <h2>Why EcoWave?</h2>
+        <div class="card why1">
+          <img src="sustainable.jpg" alt="Woman with backpack" />
+          <div class="overlay"></div>
+          <div class="card-content">
+            <h3>Sustainable Design</h3>
+            <p>
+              All our products are made from recycled materials and designed to
+              last.
+            </p>
+          </div>
         </div>
-        <!-- Lägg till fler produkter här -->
+        <div class="card why2">
+          <img src="materials.jpg" alt="Man setting up tent" />
+          <div class="overlay"></div>
+          <div class="card-content">
+            <h3>Eco-friendly Materials</h3>
+            <p>
+              We use environmentally certified materials that reduce waste and
+              carbon emissions.
+            </p>
+          </div>
+        </div>
+        <div class="card why3">
+          <img src="adventure.jpg" alt="Person walking rocky hills" />
+          <div class="overlay"></div>
+          <div class="card-content">
+            <h3>Innovation for Adventure</h3>
+            <p>
+              Our products are built to be lightweight and functional for all
+              your outdoor adventures.
+            </p>
+          </div>
+        </div>
       </section>
-      <video src="" id="video"></video>
-      <form action="https://www.freecodecamp.com/email-submit" id="form">
-        <label for="email">Email</label>
-        <input
-          type="email"
-          name=""
-          id="email"
-          placeholder="Please enter your email"
-        />
-        <input type="submit" name="" value="Submit" id="submit" />
-      </form>
+      <section class="products-section" id="products">
+        <h2>Our Bestsellers</h2>
+        <article>
+          <div class="article-wrapper">
+            <figure>
+              <img src="backpack.jpg" alt="EcoPack Backpack" />
+            </figure>
+            <div class="article-body">
+              <h3>EcoPack Backpack</h3>
+              <p>
+                A backpack made from 100% recycled materials, perfect for
+                hiking.
+              </p>
+              <p class="product-price">899 SEK</p>
+              <a href="#" class="read-more">
+                Read more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="article-wrapper">
+            <figure>
+              <img src="tent.jpg" alt="EcoShelter Tent" />
+            </figure>
+            <div class="article-body">
+              <h3>EcoShelter Tent</h3>
+              <p>
+                An ultra-light tent designed for adventurers who want to protect
+                nature.
+              </p>
+              <p class="product-price">2499 SEK</p>
+              <a href="#" class="read-more">
+                Read more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="article-wrapper">
+            <figure>
+              <img src="bottle.jpg" alt="EcoHydrate Water Bottle" />
+            </figure>
+            <div class="article-body">
+              <h3>EcoHydrate Water Bottle</h3>
+              <p>
+                A sustainable water bottle that keeps your drink cooler for
+                longer.
+              </p>
+              <p class="product-price">199 SEK</p>
+              <a href="#" class="read-more">
+                Read more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="testimonials" id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="carousel-container">
+          <input type="radio" name="position" />
+          <input type="radio" name="position" checked />
+          <input type="radio" name="position" />
+          <input type="radio" name="position" />
+          <div id="carousel">
+            <div class="item">
+              <blockquote>
+                <p>
+                  EcoWave's products have transformed my outdoor experiences. I
+                  love knowing that I am contributing to a better world.
+                </p>
+              </blockquote>
+              <div>
+                <h3>Anna Hansson</h3>
+                <h4>Stockholm</h4>
+              </div>
+            </div>
+            <div class="item">
+              <blockquote>
+                <p>
+                  I use the EcoPack on all my hikes – lightweight, spacious, and
+                  sustainable!
+                </p>
+              </blockquote>
+              <div>
+                <h3>Johan Granby</h3>
+                <h4>Göteborg</h4>
+              </div>
+            </div>
+            <div class="item">
+              <blockquote>
+                <p>
+                  EcoShelter is the best tent I have ever owned. It’s so easy to
+                  carry and set up.
+                </p>
+              </blockquote>
+              <div>
+                <h3>Maja Asp</h3>
+                <h4>Malmö</h4>
+              </div>
+            </div>
+            <div class="item">
+              <blockquote>
+                <p>
+                  EcoWave's products have transformed my outdoor experiences. I
+                  love knowing that I am contributing to a better world.
+                </p>
+              </blockquote>
+              <div>
+                <h3>Anna Hansson</h3>
+                <h4>Stockholm</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="newsletter-section">
+        <h2>Our Newsletter</h2>
+        <div class="wrapper">
+          <form
+            action="https://www.freecodecamp.com/email-submit"
+            id="form"
+            class="card-content"
+          >
+            <div class="container">
+              <div class="image">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h1>Subscribe</h1>
+              <p>
+                Sign up for our newsletter to stay up to date on our
+                sustainability work and products
+              </p>
+            </div>
+            <div class="form-input">
+              <label for="email"></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Please Enter Your Email"
+              />
+              <input type="submit" value="submit" id="submit" class="button" />
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <h3>Stay Connected</h3>
+        <div class="social-icons">
+          <a href="https://twitter.com" target="_blank">
+            <i class="fa-brands fa-twitter fa-xl"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram fa-xl"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook fa-xl"></i>
+          </a>
+        </div>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#terms">Terms of Service</a></li>
+          <li><a href="#privacy">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <p class="copyright">© 2024 EcoWave. All rights reserved.</p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/5a52363ea2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
