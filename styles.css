@@ -108,13 +108,24 @@ header {
     margin-right: 10px;
   }
   nav {
-    width: 40%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    a {
-      text-decoration: none;
-      color: var(--color-primary);
+    width: 50%;
+    .nav-menu {
+      margin: 0.8rem auto;
+      gap: 2.6rem;
+      display: flex;
+      flex-direction: row;
+      .nav-link {
+        list-style-type: none;
+
+        a {
+          text-decoration: none;
+          color: var(--color-primary);
+          text-transform: uppercase;
+        }
+      }
     }
   }
 }
@@ -174,6 +185,7 @@ header {
 #whyecowave .card {
   width: 300px;
   height: 250px;
+  margin: auto;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -557,7 +569,7 @@ blockquote {
     padding: 10px;
   }
   header nav {
-    width: 60%;
+    width: 100%;
   }
   #whyecowave,
   #products {
@@ -569,6 +581,23 @@ blockquote {
 }
 
 @media screen and (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    span {
+      font-size: 1rem;
+    }
+    img {
+      height: 40px;
+    }
+    nav {
+      font-size: 0.7rem;
+      .nav-menu {
+        gap: 2rem;
+        padding: 0;
+      }
+    }
+  }
   h2 {
     margin-top: 1.5rem;
     display: none;
@@ -595,6 +624,7 @@ blockquote {
     .card {
       width: 95%;
       height: 180px;
+      margin: auto;
       overflow: hidden;
       color: var(--color-accent);
       cursor: unset;
